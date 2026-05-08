@@ -152,7 +152,7 @@ function AtAGlance() {
   const targetIcon = <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>;
 
   return (
-    <section style={{ padding: "32px 56px 88px" }}>
+    <section id="overview" style={{ padding: "32px 56px 88px" }}>
       <SectionHeader
         eyebrow="At a glance"
         title="Headline numbers"
@@ -243,7 +243,7 @@ function DailyPerformance() {
     + ` L ${linePts[0].x} ${padT + innerH} Z`;
 
   return (
-    <section style={{ padding: "24px 56px 96px" }}>
+    <section id="daily" style={{ padding: "24px 56px 96px" }}>
       <SectionHeader eyebrow="Daily performance" title="Spend and sales day by day"
         subtitle="Bars: daily ad spend in dollars. Gold curve: orders attributed to Meta that day." />
       <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr", gap: 24 }} className="daily-grid">
@@ -450,7 +450,7 @@ function HeroProduct() {
   const offset = inView ? c * (1 - pct / 100) : c;
 
   return (
-    <section style={{ padding: "24px 56px 96px" }}>
+    <section id="hero" style={{ padding: "24px 56px 96px" }}>
       <SectionHeader eyebrow="The hero" title="One hat carried the campaign"
         subtitle="Out of 12 Tennessee SKUs, a single hat produced 38% of the line's revenue." />
       <Card hover={false}>
